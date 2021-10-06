@@ -1,0 +1,122 @@
+@import "../connect";
+.bookingTab {
+  display: block;
+  max-width: 940px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+  //   -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  //   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 18;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #8a7676;
+  @media only screen and (max-width: 420px -1px) {
+    padding: 10px;
+    transform: translate(-50%, 90%);
+    width: 90%;
+  }
+  @media only screen and (max-width: 420px) {
+    padding: 10px;
+    transform: translate(-50%, 90%);
+    width: 90%;
+  }
+  @media only screen and (max-width: 576px -1px) {
+    padding: 10px;
+    transform: translate(-50%, 90%);
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 576px+ 1px) and (max-width: 768px) {
+    padding: 10px;
+    transform: translate(-50%, 60%);
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 768+ 1px) and (max-width: 992px) {
+    padding: 10px;
+    transform: translate(-50%, 90%);
+    width: 90%;
+  }
+
+  .row {
+    .select__button {
+      @media only screen and (max-width: 420px) {
+        width: 50%;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      @media only screen and (min-width: 420px +1px) and(max-width:576px) {
+        width: 50%;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+        width: 50% !important;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      button {
+        background-color: $color-orange;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 4px;
+
+        margin-top: 5px;
+        padding: 10px 25px;
+        line-height: 90%;
+        color: white;
+      }
+    }
+    .select__item {
+      @media only screen and (max-width: 420px) {
+        width: 50%;
+        margin-bottom: 5px;
+      }
+
+      @media only screen and (min-width: 420px +1px) and(max-width:576px) {
+        width: 50%;
+        margin-bottom: 5px;
+      }
+
+      .select__form {
+        position: relative;
+        // display: flex;
+        width: 100%;
+        height: 3em;
+        line-height: 3;
+        background: none;
+        overflow: hidden;
+        border-radius: 0.25em;
+        border-right: 1px solid $color-gray-1;
+        transition: 0.2s ease-in-out;
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          appearance: none;
+          outline: 0;
+          box-shadow: none;
+          border: 0 !important;
+          background: none;
+          background-image: none;
+          flex: 1;
+          // padding: 0 0.5em;
+          color: #333;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

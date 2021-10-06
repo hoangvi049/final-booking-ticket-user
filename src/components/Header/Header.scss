@@ -1,0 +1,91 @@
+@import "../connect";
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+header {
+  position: fixed;
+  z-index: 25;
+  width: 100%;
+  top: -1%;
+  box-shadow: 0 0 15px $color-black-dark-3;
+  transition: all 0.2s;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+  .navbar {
+    .header__mobile {
+      display: none;
+      @media only screen and (max-width: 420px -1px) {
+        display: block;
+        margin-right: 0;
+      }
+      @media only screen and (max-width: 420px) {
+        display: block;
+        margin-right: 0;
+      }
+      @media only screen and (max-width: 576px -1px) and (min-width: 420px +1px) {
+        display: block;
+      }
+
+      @media only screen and (min-width: 576px+ 1px) and (max-width: 768px) {
+        display: block;
+      }
+
+      @media only screen and (min-width: 768+ 1px) and (max-width: 992px) {
+        display: block;
+      }
+    }
+
+    .navbar-brand {
+      .text__logo {
+        color: #000;
+        font-family: "Metal Mania", cursive;
+        font-size: 25px;
+        padding: 5px;
+        font-style: italic;
+        @media only screen and (max-width: 420px -1px) {
+          font-size: 20px;
+        }
+        @media only screen and (max-width: 420px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .navbar-collapse {
+      .header__login {
+        @media only screen and (max-width: 420px -1px) {
+          display: none;
+        }
+        @media only screen and (max-width: 420px) {
+          display: none;
+        }
+        @media only screen and (max-width: 576px -1px) {
+          display: none;
+        }
+
+        @media only screen and (min-width: 576px+ 1px) and (max-width: 768px) {
+          display: none;
+        }
+
+        @media only screen and (min-width: 768+ 1px) and (max-width: 992px) {
+          display: none;
+        }
+        .login-link {
+          color: #000;
+          font-size: 15px;
+        }
+      }
+
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: 1rem;
+            &:hover {
+              color: #f60 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

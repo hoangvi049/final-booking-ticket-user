@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+.banner {
+  position: relative;
+}
+
+.banner .banner-carousel .owl-dots {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+}
+
+.banner .banner-carousel .owl-dots button:focus {
+  outline: none !important;
+}
+
+.banner .banner-carousel .owl-dots .active span {
+  background: #f60;
+}
+
+.banner .banner-carousel .owl-stage-outer .owl-stage .owl-item .item {
+  height: 798px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.banner .banner-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 38%;
+  font-size: 5rem;
+  color: #949494;
+  outline: none;
+}
+
+.banner .banner-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 38%;
+  font-size: 5rem;
+  color: #949494;
+  outline: none;
+}
+/*# sourceMappingURL=Carousel.css.map */

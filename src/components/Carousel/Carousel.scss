@@ -1,0 +1,53 @@
+@import "../connect";
+
+.banner {
+  position: relative;
+  .banner-carousel {
+    .owl-dots {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+
+      button:focus {
+        outline: none !important;
+      }
+      .active {
+        span {
+          background: $color-orange;
+        }
+      }
+    }
+
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          .item {
+            height: 798px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .owl-nav {
+      .owl-prev {
+        position: absolute;
+        left: 0;
+        top: 38%;
+        font-size: 5rem;
+        color: $color-gray-2;
+        outline: none;
+      }
+      .owl-next {
+        position: absolute;
+        right: 0;
+        top: 38%;
+        font-size: 5rem;
+        color: $color-gray-2;
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+@media only screen and (max-width: 575px) {
+  .listMovie {
+    padding: 130px 5px 10px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .listMovie {
+    width: 100%;
+    padding: 130px 5px 10px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .listMovie {
+    padding: 30px;
+    width: 100%;
+  }
+}
+
+.listMovie #listMovieTabs {
+  padding: 5% 0;
+}
+
+.listMovie #listMovieTabs .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.listMovie #listMovieTabs .nav .nav-item {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: none;
+}
+
+.listMovie #listMovieTabs .nav .nav-item .nav-link {
+  color: #29303b;
+  background: none;
+  font-size: 24px;
+  font-weight: 500;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.listMovie #listMovieTabs .nav .nav-item .nav-link.active {
+  color: #f60;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.listMovie #listMovieTabs .nav .nav-item .nav-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=SlickMovieList.css.map */

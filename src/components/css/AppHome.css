@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+.AppHome {
+  background-image: url("https://tix.vn/app/assets/img/icons/backapp.jpg");
+  background-size: contain;
+}
+
+.AppHome .AppHome__text {
+  color: #fff;
+  padding: 230px 20px;
+}
+
+.AppHome .AppHome__text .text__title {
+  color: #fff;
+}
+
+.AppHome .AppHome__text .text__content {
+  padding: 20px 0;
+}
+
+.AppHome .mobile {
+  position: relative;
+}
+
+.AppHome .mobile .mobile__screen .mobile__screen--img {
+  width: 40%;
+  margin: 70px 40px;
+}
+
+.AppHome .mobile .mobile__slider {
+  position: absolute;
+  top: 80px;
+  width: 36%;
+  left: 61px;
+}
+
+.AppHome .mobile .mobile__slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.AppHome .mobile .mobile__slider .owl-dot {
+  display: none;
+}
+
+.AppHome .mobile .mobile__slider .owl-nav {
+  display: none;
+}
+/*# sourceMappingURL=AppHome.css.map */

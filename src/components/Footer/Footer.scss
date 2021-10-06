@@ -1,0 +1,101 @@
+@import "../connect";
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+footer {
+  background-color: $color-black-2;
+
+  .footer__content {
+    border-bottom: 1px solid $color-gray-2;
+    padding-bottom: 50px;
+    p {
+      font-size: 12px;
+    }
+    padding-top: 20px;
+    .guidelines {
+      .app__name {
+        color: #fff;
+      }
+      ul {
+        list-style: none;
+        li {
+          margin-bottom: 5px;
+
+          a {
+            color: $color-gray-2;
+            font-weight: 600;
+            font-size: 12px;
+            transition: all 0.3s;
+            opacity: 0.7;
+            &:hover {
+              color: #fff;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      p {
+        color: #fff;
+      }
+      .contact__item {
+        list-style: none;
+        display: flex;
+        gap: 4%;
+        .contact__item--li {
+          .contact__item--link {
+            .contact__item--img {
+              width: 30px;
+              height: 30px;
+              background-color: #fff;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .mobile__app {
+      .mobile__app--title {
+        color: #fff;
+      }
+      .mobile__app--item {
+        img {
+          width: 30px;
+          height: 30px;
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__copyright {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    .copyright__logo {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .logo__text {
+        font-family: "Metal Mania", cursive;
+        font-size: 25px;
+        font-style: italic;
+      }
+    }
+    .copyright__text {
+      .text__content {
+        color: $color-gray-2;
+      }
+    }
+  }
+
+  .imgBoCo {
+    img {
+      width: 100%;
+    }
+  }
+}

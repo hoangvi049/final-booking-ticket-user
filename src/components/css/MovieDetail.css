@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+.movieDetail {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  position: relative;
+}
+
+.movieDetail .overlay__gradient {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(#081c24), to(transparent));
+  background: linear-gradient(to top, #081c24, transparent 100%);
+  height: 100%;
+  width: 100%;
+}
+
+.movieDetail .film__infoMobile {
+  display: none;
+}
+
+.movieDetail .film__infoMobile .days {
+  color: #949494;
+}
+
+.movieDetail .film__infoMobile .name {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 20px;
+}
+
+.movieDetail .film__infoMobile .during {
+  color: #949494;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .film__infoMobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .movieDetail .film__infoMobile {
+    display: block;
+    bottom: -1%;
+    left: 3%;
+  }
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--img img {
+  position: relative;
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--img .rating__point {
+  display: none;
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  padding: 2px;
+  position: absolute;
+  z-index: 20;
+  top: 12px;
+  left: 20px;
+  color: #fff;
+  width: 54px;
+  text-align: center;
+  line-height: 1;
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--img .rating__point .rating__number {
+  font-size: 15px;
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+  color: #fff;
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--img .rating__point .rating__star {
+  font-size: 7px;
+  color: #f60;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .movieDetail__info .detail__content .detail__content--img .rating__point {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .movieDetail .movieDetail__info .detail__content .detail__content--img .rating__point {
+    display: block;
+  }
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--img img {
+  max-width: 100%;
+  height: 320px;
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--name {
+  padding: 10px;
+  padding: 10% 0;
+  color: #ffff;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .movieDetail__info .detail__content .detail__content--name {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .movieDetail .movieDetail__info .detail__content .detail__content--name {
+    display: none;
+  }
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--name .btn__buy {
+  background: #fb4226;
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--name .name .age__rate {
+  background-color: #fb4226;
+  font-weight: 500;
+  padding: 1%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.movieDetail .movieDetail__info .detail__content .detail__content--name .name .title {
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 200%;
+}
+
+.movieDetail .movieDetail__info .detail__rating {
+  -webkit-transform: translate(60%, 20%);
+          transform: translate(60%, 20%);
+  padding: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .movieDetail__info .detail__rating {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .movieDetail .movieDetail__info .detail__rating {
+    display: none;
+  }
+}
+
+.movieDetail .movieDetail__info .detail__rating .rating__ring {
+  position: relative;
+  margin: 0px 14px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid #333;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.movieDetail .movieDetail__info .detail__rating .rating__ring p {
+  line-height: 120px;
+  color: #fff;
+  font-size: 60px;
+}
+
+.movieDetail .movieDetail__info .detail__rating .rating__ring .ring__style {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border: 10px solid #8bc541;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+  clip: rect(0, 7.7em, 10em, 0);
+  -webkit-transform: rotate(189deg);
+          transform: rotate(189deg);
+}
+
+.movieDetail .movieDetail__info .detail__rating .rating__stars {
+  color: #f60;
+  font-size: 150%;
+  padding: 10px 25px;
+}
+
+.movieDetail .movieDetail__info .detail__rating .rating__info {
+  color: white;
+  font-size: 100%;
+  margin: 0 25px;
+}
+
+.movieDetail .movieDetail__tabs {
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .movieDetail__tabs {
+    margin-bottom: 400px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 765px) {
+  .movieDetail .movieDetail__tabs {
+    margin-bottom: 350px;
+  }
+}
+
+.movieDetail .movieDetail__tabs nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movieDetail .movieDetail__tabs nav .nav-tabs {
+  border-bottom: none;
+}
+
+.movieDetail .movieDetail__tabs nav .nav-tabs .nav-link {
+  color: #fff;
+  margin: 0 60px;
+  background-color: none;
+  border: none !important;
+  font-size: 20px;
+}
+
+.movieDetail .movieDetail__tabs nav .nav-tabs .nav-link.active {
+  background-color: #fff0 !important;
+  bottom: none;
+  color: #f60;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.movieDetail .movieDetail__tabs nav .nav-tabs .nav-link:hover {
+  color: #f60;
+}
+
+.movieDetail .movieDetail__tabs .tab-content {
+  padding-top: 50px;
+  height: 330px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__info .info__content {
+  margin: 0 !important;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__info .info__content .info__left .contentLeft {
+  margin-bottom: 10px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__info .info__content .info__left .contentLeft .contentTitle {
+  width: 35%;
+  float: left;
+  font-size: 16px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__info .info__content .info__left .contentLeft .contentDetail {
+  width: 40%;
+  float: left;
+  font-size: 14px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__info .info__content .info__right .substance__title {
+  font-size: 16px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie {
+  height: 396px;
+  background-color: #f8f9fa;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main {
+  padding: 0;
+  max-width: 9% !important;
+  border-right: 0.5px solid #d8d8d8;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main {
+    min-width: 100%;
+  }
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main .nav-link {
+  opacity: 0.5;
+  background-color: #fff0;
+  border-bottom: 1px solid #d8d8d8;
+  display: inline;
+  max-width: 100%;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+  padding: 10px 10px 5px 25px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main .nav-link:hover {
+  opacity: 1;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main .nav-link.active {
+  opacity: 1;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__main .nav-link img {
+  width: 50px;
+  height: 50px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side {
+  padding: 0;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list {
+  margin: 0;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab {
+  border-right: 1px solid #d8d8d8;
+  padding: 0;
+  height: 396px;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #949494;
+  border-bottom: 1px solid #949494;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link:last-child {
+  border-bottom: none;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link:last-child:hover {
+  border-bottom: none;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link:last-child.active {
+  opacity: 1;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link .img-theater img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link .text-theater .name {
+  font-size: 19px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .nav-link .text-theater .detail {
+  color: #f60;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .showtimes-collapse .showtimes__list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 73px 0px 0px;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .showtimes-collapse .showtimes__list .time__content {
+  /* height: 20px; */
+  /* border: 1px solid gray; */
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .showtimes-collapse .showtimes__list .time__content .time__begin {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 7px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  color: #949494;
+}
+
+.movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .showtimes-collapse .showtimes__list .time__content .time__begin:hover {
+  color: #f60;
+}
+
+@media only screen and (max-width: 575px) {
+  .movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .showtimes-collapse .showtimes__list .time__content .time__begin {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .movieDetail .movieDetail__tabs .tab-content .tab__showtimes .showtimes__movie .showtimes__side .theater .theater__list .theater__tab .nav .showtimes-collapse .showtimes__list .time__content .time__begin {
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=MovieDetail.css.map */

@@ -1,0 +1,94 @@
+@import "../../connect";
+
+.bookingTicket__left {
+  .info {
+    padding: 20px 70px;
+    .film__img {
+      margin-bottom: spacing(1);
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .theater {
+      margin-left: 15px;
+      .name {
+        color: $color-black-0;
+      }
+      .time {
+        margin: 0;
+        color: $color-gray-2;
+      }
+    }
+  }
+
+  .screen {
+    padding: 0 60px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .danhSachGhe {
+    text-align: center;
+
+    margin-bottom: 30px;
+    .slot__item {
+      margin-bottom: 10px;
+      margin-right: 10px;
+      font-size: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #949494;
+      @media only screen and (max-width: 420px) {
+        font-size: 21px;
+      }
+      @media only screen and (min-width: 421px) and (max-width: 576) {
+        font-size: 25px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 30px;
+      }
+    }
+    .slot__vip {
+      color: $color-orange;
+    }
+
+    .slot__picked {
+      color: $color-gray-3;
+      cursor: not-allowed;
+    }
+
+    .slot__picking {
+      color: rgb(96, 197, 239);
+    }
+    .unpicked__slot {
+      color: #949494;
+    }
+    .picked__success {
+      color: $color-green;
+    }
+    .picking__from--other {
+      color: rgb(231, 221, 255);
+      cursor: not-allowed;
+    }
+  }
+
+  .slot__type {
+    margin-top: 70px;
+    justify-content: center;
+    .type__item {
+      font-size: 30px;
+      font-weight: 600;
+      @media only screen and (max-width: 575px) {
+        font-size: 7px;
+      }
+      @media only screen and (min-width: 577px) and (max-width: 767px) {
+        font-size: 10px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 20px;
+      }
+    }
+  }
+}

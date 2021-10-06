@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+.schedule {
+  margin: 0 160px 30px;
+  margin: 100px 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule {
+    margin: 0 0 350px 0;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule {
+    margin: 0 0 350px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule {
+    margin: 0 0 350px 0;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .schedule {
+    margin: 0 0 350px 0;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tab {
+  padding: 0;
+  max-width: 9% !important;
+  border-right: 0.5px solid #d8d8d8;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tab {
+    min-width: 100%;
+    border-right: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tab {
+    min-width: 100%;
+    border-right: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule .schedule__content .schedule__row .main__tab {
+    min-width: 12%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tab .nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tab .nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tab .nav .nav-link {
+  opacity: 0.5 !important;
+  border-bottom: 1px solid #fff;
+  display: inline;
+  max-width: 100%;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+  padding: 10px 10px 5px 25px;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tab .nav .nav-link {
+    padding: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tab .nav .nav-link {
+    padding: 1.2rem;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tab .nav .nav-link.active {
+  background: none;
+  background-color: #d8d8d8;
+  opacity: 1 !important;
+}
+
+.schedule .schedule__content .schedule__row .main__tab .nav .nav-link:hover {
+  opacity: 1 !important;
+}
+
+.schedule .schedule__content .schedule__row .main__tab .nav .nav-link .heThongRap__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent {
+  max-width: 90.9% !important;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-height: 400px;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tabContent {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tabContent {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule .schedule__content .schedule__row .main__tabContent {
+    max-width: 87.9% !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab {
+  border-right: 1px solid #d8d8d8;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #949494;
+  display: flex;
+  border-bottom: 1px solid #949494;
+  padding: 5px;
+  opacity: 0.5;
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+  padding-bottom: 2px;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
+    padding: 3px;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:last-child {
+  border-bottom: none;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:last-child:hover {
+  border-bottom: none;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link.active {
+  color: #000;
+  border-bottom: 1px solid #f60;
+  background-color: #f8f9fa;
+  opacity: 1;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:hover {
+  opacity: 1;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .img__theater {
+  margin: 20px 20px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .img__theater img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .name__theater {
+  font-size: medium;
+  font-weight: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .address__theater {
+  color: #949494;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .detail__theater {
+  color: #f60;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent {
+    margin-bottom: 300px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent {
+    margin-bottom: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent {
+    margin-bottom: 300px;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item {
+  border-bottom: 1px solid #949494;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__img {
+    max-width: 100%;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__img img {
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title {
+    padding-left: 15px;
+  }
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .age--ranking {
+  margin: 10px 10px;
+  background: #60c5ef;
+  border: 10%;
+  border-radius: 20%;
+  color: white;
+  padding: 5px 6px;
+  font-weight: 800;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .film__name {
+  color: #000;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .film__timing {
+  color: #949494;
+  padding: 4px 50px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  line-height: 50px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow .timeshow__item .timeshow__link {
+  color: #949494;
+  border: 1px solid #949494;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.schedule .schedule__content .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow .timeshow__item .timeshow__link:hover {
+  color: #f60;
+  border: 1px solid #f60;
+}
+
+.schedule .schedule__content .schedule__title {
+  color: #f60;
+}
+/*# sourceMappingURL=TheaterSystems.css.map */

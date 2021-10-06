@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+.register {
+  margin-top: 50px;
+  padding: 220px 0px;
+  background-image: url("https://tix.vn/app/assets/img/icons/backapp.jpg");
+  background-size: cover;
+  height: 1000px;
+  background-position: center;
+  margin-top: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.register .register__content {
+  position: relative;
+  -webkit-animation-name: slidedown;
+          animation-name: slidedown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  padding: 50px 20px;
+  width: 390px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.712)), to(rgba(0, 0, 0, 0.774)));
+  background: linear-gradient(to bottom, rgba(128, 128, 128, 0.712), rgba(0, 0, 0, 0.774));
+  text-align: center;
+}
+
+.register .register__content .register__header .img-logo img {
+  width: 90px;
+  padding-bottom: 20px;
+}
+
+.register .register__content .register__header .text-logo {
+  color: #000;
+  font-family: "Metal Mania", cursive;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.register .register__content .register__form {
+  padding-bottom: 20px;
+}
+
+.register .register__content .close__btn {
+  color: #949494;
+  font-size: 28px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+
+@-webkit-keyframes slidedown {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Register.css.map */

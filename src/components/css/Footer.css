@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+footer {
+  background-color: #222;
+}
+
+footer .footer__content {
+  border-bottom: 1px solid #949494;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+footer .footer__content p {
+  font-size: 12px;
+}
+
+footer .footer__content .guidelines .app__name {
+  color: #fff;
+}
+
+footer .footer__content .guidelines ul {
+  list-style: none;
+}
+
+footer .footer__content .guidelines ul li {
+  margin-bottom: 5px;
+}
+
+footer .footer__content .guidelines ul li a {
+  color: #949494;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+footer .footer__content .guidelines ul li a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+footer .footer__content .contact p {
+  color: #fff;
+}
+
+footer .footer__content .contact .contact__item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4%;
+}
+
+footer .footer__content .contact .contact__item .contact__item--li .contact__item--link .contact__item--img {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+footer .footer__content .mobile__app .mobile__app--title {
+  color: #fff;
+}
+
+footer .footer__content .mobile__app .mobile__app--item img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .footer__content .mobile__app .mobile__app--item img:first-child {
+  margin-right: 10px;
+}
+
+footer .footer__copyright {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+footer .footer__copyright .copyright__logo img {
+  width: 100px;
+  height: 100px;
+}
+
+footer .footer__copyright .copyright__logo .logo__text {
+  font-family: "Metal Mania", cursive;
+  font-size: 25px;
+  font-style: italic;
+}
+
+footer .footer__copyright .copyright__text .text__content {
+  color: #949494;
+}
+
+footer .imgBoCo img {
+  width: 100%;
+}
+/*# sourceMappingURL=Footer.css.map */

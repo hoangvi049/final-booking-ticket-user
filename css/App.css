@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*# sourceMappingURL=App.css.map */

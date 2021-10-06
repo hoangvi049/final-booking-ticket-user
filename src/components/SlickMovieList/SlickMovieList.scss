@@ -1,0 +1,44 @@
+@import "../connect";
+
+.listMovie {
+  @media only screen and (max-width: 575px) {
+    padding: 130px 5px 10px;
+  }
+  @media only screen and (min-width: 577px) and (max-width: 767px) {
+    width: 100%;
+    padding: 130px 5px 10px;
+  }
+  @media only screen and (min-width: 993px) and (max-width: 1199px) {
+    padding: 30px;
+    width: 100%;
+  }
+
+  #listMovieTabs {
+    padding: 5% 0;
+    .nav {
+      justify-content: center;
+      .nav-item {
+        transition: all 0.2s;
+        border: none;
+        .nav-link {
+          color: $color-black-0;
+          background: none;
+          font-size: $fs-3;
+          font-weight: $fw-medium;
+          transition: all 0.1s;
+          border: none;
+          transform: scale(1);
+          &.active {
+            color: $color-orange;
+            font-size: $fs-3;
+            font-weight: $fw-medium;
+          }
+          &:hover {
+            // @include Text($fs-3, $fw-medium);
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

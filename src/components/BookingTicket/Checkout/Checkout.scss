@@ -1,0 +1,87 @@
+@import "../../connect";
+
+.bookingTicket__right {
+  box-shadow: -8px -13px 17px -2px $color-gray-3;
+  padding-right: 0;
+  max-height: 800px;
+
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: $color-gray-6;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-gray-2;
+    border-radius: 5px;
+  }
+  .checkout__form {
+    .total__fee {
+      font-size: 50px;
+      color: rgb(40, 167, 69);
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 1px dotted $color-gray-3;
+    }
+    .film__info {
+      padding: 20px;
+      border-bottom: 1px dotted $color-gray-3;
+      .film__age--ranking {
+        color: #fff;
+        background-color: #ec0000bd;
+        border-radius: 4px;
+        font-size: 15px;
+        margin-right: 5px;
+      }
+      .film__name {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .theater__info {
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    .slot__count {
+      border-bottom: 1px dotted $color-gray-3;
+      height: 90ox;
+      .slot__booked {
+        font-size: 13px;
+        max-height: 50px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          width: 4px;
+          background-color: $color-gray-6;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-blue;
+          border-radius: 5px;
+        }
+        .slot__text {
+          .slot__number {
+            color: $color-red-0;
+            overflow-y: 0;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .discountForm {
+      padding: 20px 0;
+      font-size: 16px;
+    }
+
+    .btnBook {
+      width: 100%;
+      margin: 25px 0;
+    }
+  }
+
+  .booking__history {
+    .table {
+      max-height: 500px;
+    }
+  }
+}

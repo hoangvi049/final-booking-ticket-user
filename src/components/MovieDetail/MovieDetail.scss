@@ -1,0 +1,360 @@
+@import "../connect";
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+.movieDetail {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  position: relative;
+
+  .overlay__gradient {
+    position: absolute;
+    background: linear-gradient(to top, rgb(8, 28, 36), transparent 100%);
+    height: 100%;
+    width: 100%;
+  }
+
+  .film__infoMobile {
+    display: none;
+    .days {
+      color: $color-gray-2;
+    }
+    .name {
+      color: $color-white-light;
+      font-size: 20px;
+    }
+    .during {
+      color: $color-gray-2;
+    }
+    @media only screen and (max-width: 575px) {
+      display: block;
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+      display: block;
+      bottom: -1%;
+      left: 3%;
+    }
+  }
+
+  .movieDetail__info {
+    .detail__content {
+      .detail__content--img {
+        img {
+          position: relative;
+        }
+        .rating__point {
+          display: none;
+          background-color: rgba(12, 27, 54, 0.8);
+          border: 1px solid #1f2e46;
+          border-radius: 4px;
+          padding: 2px;
+          position: absolute;
+          z-index: 20;
+          top: 5px;
+          left: 20px;
+          color: #fff;
+          width: 54px;
+          text-align: center;
+          line-height: 1;
+          .rating__number {
+            font-size: 15px;
+            //   text-align: center;
+            transform: scaleY(1.2);
+            color: #fff;
+          }
+          .rating__star {
+            font-size: 7px;
+            color: $color-orange;
+          }
+          @media only screen and (max-width: 575px) {
+            display: block;
+          }
+          @media only screen and (min-width: 577px) and (max-width: 767px) {
+            display: block;
+            // top: 12px;
+            // left: 50%;
+          }
+        }
+        img {
+          max-width: 100%;
+          height: 320px;
+        }
+      }
+      .detail__content--name {
+        padding: 10px;
+        padding: 10% 0;
+        color: #ffff;
+        font-weight: 600;
+
+        @media only screen and (max-width: 575px) {
+          display: none;
+        }
+        @media only screen and (min-width: 577px) and (max-width: 767px) {
+          display: none;
+        }
+        .btn__buy {
+          background: #fb4226;
+        }
+        .name {
+          .age__rate {
+            background-color: #fb4226;
+            font-weight: 500;
+            padding: 1%;
+            margin: 10px 0;
+            border-radius: 5px;
+          }
+          .title {
+            color: #fff;
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 200%;
+          }
+        }
+      }
+    }
+
+    .detail__rating {
+      transform: translate(60%, 20%);
+      padding: 0;
+      @media only screen and (max-width: 575px) {
+        display: none;
+      }
+      @media only screen and (min-width: 577px) and (max-width: 767px) {
+        display: none;
+      }
+      .rating__ring {
+        position: relative;
+        margin: 0px 14px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 10px solid #333;
+        text-align: center;
+        background-color: $color-black-dark-3;
+        p {
+          line-height: 120px;
+          color: $color-white-0;
+          font-size: 60px;
+        }
+        .ring__style {
+          position: absolute;
+          width: 130px;
+          height: 130px;
+          border: 10px solid $color-green-1;
+          border-radius: 50%;
+          top: -10px;
+          left: -10px;
+          clip: rect(0, 7.7em, 10em, 0);
+          transform: rotate(189deg);
+        }
+      }
+      .rating__stars {
+        color: #f60;
+        font-size: 150%;
+        padding: 10px 25px;
+      }
+      .rating__info {
+        color: white;
+        font-size: 100%;
+        margin: 0 25px;
+      }
+    }
+  }
+
+  .movieDetail__tabs {
+    padding-top: 50px;
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 400px;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 765px) {
+      margin-bottom: 350px;
+    }
+    @media only screen and (max-width: 575px) {
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      .nav-tabs {
+        border-bottom: none;
+        .nav-link {
+          color: #fff;
+          margin: 0 60px;
+          background-color: none;
+          border: none !important;
+          font-size: 20px;
+          &.active {
+            background-color: #fff0 !important;
+            bottom: none;
+            color: $color-orange;
+            transition: all 0.3s;
+          }
+          &:hover {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding-top: 50px;
+      height: 330px;
+      .tab__info {
+        .info__content {
+          margin: 0 !important;
+          .info__left {
+            .contentLeft {
+              margin-bottom: 10px;
+              .contentTitle {
+                width: 35%;
+                float: left;
+                font-size: 16px;
+              }
+              .contentDetail {
+                width: 40%;
+                float: left;
+                font-size: 14px;
+              }
+            }
+          }
+          .info__right {
+            .substance__title {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .tab__showtimes {
+        .showtimes__movie {
+          height: 396px;
+          background-color: rgb(248, 249, 250);
+          .showtimes__main {
+            padding: 0;
+            max-width: 9% !important;
+            border-right: 0.5px solid $color-gray-6;
+            @media only screen and (max-width: 575px) {
+              min-width: 100%;
+            }
+
+            @media only screen and (min-width: 577px) and (max-width: 767px) {
+              min-width: 100%;
+            }
+            .nav-link {
+              opacity: 0.5;
+              background-color: #fff0;
+              border-bottom: 1px solid $color-gray-6;
+              display: inline;
+              max-width: 100%;
+              transition: linear 0.2s;
+              padding: 10px 10px 5px 25px;
+
+              &:hover {
+                opacity: 1;
+              }
+              &.active {
+                opacity: 1;
+              }
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+          .showtimes__side {
+            padding: 0;
+            .theater {
+              .theater__list {
+                margin: 0;
+                .theater__tab {
+                  border-right: 1px solid $color-gray-6;
+                  padding: 0;
+                  height: 396px;
+                  width: 100%;
+                  overflow-y: scroll;
+                  background-color: #fff;
+                  &::-webkit-scrollbar {
+                    width: 4px;
+                    background-color: $color-gray-6;
+                  }
+
+                  &::-webkit-scrollbar-thumb {
+                    background-color: $color-gray-2;
+                    border-radius: 5px;
+                  }
+                  .nav {
+                    .nav-link {
+                      display: flex;
+                      color: $color-gray-2;
+                      border-bottom: 1px solid $color-gray-2;
+
+                      &:last-child {
+                        border-bottom: none;
+
+                        &:hover {
+                          border-bottom: none;
+                        }
+                        &.active {
+                          opacity: 1;
+                        }
+                      }
+                      .img-theater {
+                        img {
+                          width: 50px;
+                          height: 50px;
+                          border-radius: 50%;
+                          margin: 10px;
+                        }
+                      }
+                      .text-theater {
+                        .name {
+                          font-size: 19px;
+                        }
+                        .detail {
+                          color: $color-orange;
+                        }
+                      }
+                    }
+
+                    .showtimes-collapse {
+                      .showtimes__list {
+                        justify-content: space-between;
+                        margin: 10px 73px 0px 0px;
+                        .time__content {
+                          /* height: 20px; */
+                          /* border: 1px solid gray; */
+
+                          .time__begin {
+                            font-size: 14px;
+                            font-weight: 500;
+                            padding: 10px 10px;
+                            border-radius: 7px;
+                            display: inline-grid;
+                            color: $color-gray-2;
+
+                            &:hover {
+                              color: $color-orange;
+                            }
+
+                            @media only screen and (max-width: 575px) {
+                              min-width: 100%;
+                            }
+
+                            @media only screen and (min-width: 577px) and (max-width: 767px) {
+                              min-width: 100%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

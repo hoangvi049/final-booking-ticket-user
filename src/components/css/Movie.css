@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap");
+.movie {
+  padding-top: 100px;
+}
+
+.movie .search {
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.movie .search #wrap {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  padding: 50px 0;
+}
+
+.movie .search #wrap input {
+  border: none;
+  width: 500px;
+  background-color: rgba(20, 23, 28, 0.05);
+  height: 40px;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.movie .search #wrap input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #f2f3f5;
+  outline: 1px solid #f60;
+}
+
+.movie .search #wrap i {
+  position: absolute;
+  color: #f60;
+  right: 3%;
+  top: 63%;
+}
+
+.movie .movie__title {
+  text-align: center;
+  font-weight: 700;
+  color: #f60;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content:hover .card-img .overlay {
+  opacity: 1;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content:hover .card-text .btn-link {
+  opacity: 1;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content:hover .card-text .text-content {
+  opacity: 0;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img {
+  position: relative;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img .overlay {
+  cursor: pointer;
+  opacity: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
+  background: linear-gradient(to top, black, transparent 100%);
+  height: 100%;
+  width: 100%;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img .overlay i {
+  color: rgba(25, 50, 50, 0.6);
+  position: absolute;
+  top: 42%;
+  right: 40%;
+  font-size: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img .overlay i:hover {
+  color: #f2f3f5;
+  cursor: pointer;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img .movie-img {
+  width: 100%;
+  height: 330px;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img .movie-rating {
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 55px;
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-img .movie-rating .film__star {
+  color: #f60;
+  font-size: 9px;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-text {
+  position: relative;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-text .movie_age-rate {
+  display: inline-block;
+  background: #fb4226;
+  color: #fff;
+  width: 40px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-text .movie-name {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  font-family: SF Medium;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-text .btn-link {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  bottom: 33px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  font-size: 15px;
+  padding: 12px 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.movie .movielist-content .movie-detail .movie-card .card-content .card-text .btn-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  padding-right: 30px;
+}
+/*# sourceMappingURL=Movie.css.map */
